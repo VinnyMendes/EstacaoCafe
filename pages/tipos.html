@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Navbar css -->
     <link rel="stylesheet" href="../css/navbar.css">
     <!-- Página tipos css -->
@@ -20,9 +20,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    
+
     <title>Tipos de Café | Empório do Café</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-md bg-lignt fixed-top navbar-align justify-content-between">
@@ -31,8 +32,9 @@
             </a>
 
 
-            <button class="navbar-toggler btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar2"
-                aria-controls="collapsingNavbar2" aria-expanded="false" aria-label="alternar navegação">
+            <button class="navbar-toggler btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsingNavbar2" aria-controls="collapsingNavbar2" aria-expanded="false"
+                aria-label="alternar navegação">
             </button>
 
 
@@ -58,87 +60,99 @@
         <h2 style="color:white;">Tipos de Café</h2>
 
         <div class="card-grid">
-                
-                    <div class="card" id="robusta">
-                        <img src="../assets/robusta.jpg" class="card-img-top" alt="café robusta">
-                        <div class="card-body d-flex justify-content-between flex-column align-items-start">
-                            <h5 class="card-title">Robusta</h5>
-                            <p class="card-text">O café robusta é mais marcante e amargo.</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#cafeRobusta">
-                                Saiba Mais
-                            </button>
-                        </div>
-                    </div>
-              
-                
-                    <div class="card">
-                        <img img src="../assets/arabica.jpg" class="card-img-top" alt="café arábica">
-                        <div class="card-body d-flex justify-content-between flex-column align-items-start">
-                            <h5 class="card-title">Arábica</h5>
-                            <p class="card-text">bla bla bla</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#cafeArabica">
-                                Saiba Mais
-                            </button>
-                        </div>
-                    </div>
-               
-                
-                    <div class="card">
-                        <img src="../assets/catuai.jpg" alt="café catuaí" class="card-img-top">
-                        <div class="card-body d-flex justify-content-between flex-column align-items-start">
-                            <h5 class="card-title">Catuaí</h5>
-                            <p class="card-text">bla bla bla</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#cafeCatuai">
-                                Saiba Mais
-                            </button>
-                        </div>
-                    </div>
-                
-                
-                    <div class="card">
-                        <img src="../assets/novoMundo.jpg" class="card-img-top" alt="café novo mundo">
-                        <div class="card-body d-flex justify-content-between flex-column align-items-start">
-                            <h5 class="card-title">Novo Mundo</h5>
-                            <p class="card-text">bla bla bla</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#cafeNovoMundo">
-                                Saiba Mais
-                            </button>
-                        </div>
-                    </div>
-                
-                
-                    <div class="card">
-                        <img src="../assets/acaia.jpg" class="card-img-top" alt="café acaia">
-                        <div class="card-body d-flex justify-content-between flex-column align-items-start">
-                            <h5 class="card-title">Acaiá</h5>
-                            <p class="card-text">bla bla bla</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#cafeAcaia">
-                                Saiba Mais
-                            </button>
-                        </div>
-                    </div>
-                
-                
-                    <div class="card">
-                        <img src="../assets/bourbon.jpg" class="card-img-top" alt="café bourbon">
-                        <div class="card-body d-flex justify-content-between flex-column align-items-start">
-                            <h5 class="card-title">Bourbon</h5>
-                            <p class="card-text">bla bla bla</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#cafeBourbon">
-                                Saiba Mais
-                            </button>
-                        </div>
-                    </div>
-                
-            
+
+            <div class="card" id="arabica">
+                <img img src="../assets/arabica.jpg" class="card-img-top" alt="café arábica">
+                <div class="card-body d-flex justify-content-between flex-column align-items-start">
+                    <h5 class="card-title">Arábica</h5>
+                    <p class="card-text">O café arábica se caracteriza por cafés mais finos e requintados.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cafeArabica">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card" id="robusta">
+                <img src="../assets/robusta.jpg" class="card-img-top" alt="café robusta">
+                <div class="card-body d-flex justify-content-between flex-column align-items-start">
+                    <h5 class="card-title">Robusta</h5>
+                    <p class="card-text">O café robusta é mais marcante e amargo.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cafeRobusta">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card" id="catuai">
+                <img src="../assets/catuai.jpg" alt="café catuaí" class="card-img-top">
+                <div class="card-body d-flex justify-content-between flex-column align-items-start">
+                    <h5 class="card-title">Catuaí</h5>
+                    <p class="card-text">O catuaí possui um sabor suave, acidez média e sabor levemente adocicado</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cafeCatuai">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card" id="novoMundo">
+                <img src="../assets/novoMundo.jpg" class="card-img-top" alt="café novo mundo">
+                <div class="card-body d-flex justify-content-between flex-column align-items-start">
+                    <h5 class="card-title">Novo Mundo</h5>
+                    <p class="card-text">Sabor doce e marcante, com acidez média e perfume intenso de torra.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#cafeNovoMundo">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card" id="acaia">
+                <img src="../assets/acaia.jpg" class="card-img-top" alt="café acaia">
+                <div class="card-body d-flex justify-content-between flex-column align-items-start">
+                    <h5 class="card-title">Acaiá</h5>
+                    <p class="card-text">Ideal para apreciadores de um café suave, com notas frutadas. Possui um sabor
+                        achocolatado.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cafeAcaia">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card" id="bourbon">
+                <img src="../assets/bourbon.jpg" class="card-img-top" alt="café bourbon">
+                <div class="card-body d-flex justify-content-between flex-column align-items-start">
+                    <h5 class="card-title">Bourbon</h5>
+                    <p class="card-text">O bourbon é uma variedade do café arábica. Tem um sabor doce com notas de
+                        chocolate e aroma intenso.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cafeBourbon">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+
         </div>
         <!-- Modal -->
+        <div class="modal fade" id="cafeArabica" tabindex="-1" role="dialog" aria-labelledby="arabica"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content p-1">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Café Arábica</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body px-5 py-4">
+                        <p>A Coffea Arabica é líder de mercado, respondendo por mais de 60% da produção mundial de café.
+                            Isso se deve ao seu aroma complexo e sabor mais doce, que contém 50% menos cafeína do que
+                            seus concorrentes Robusta. O chamado café especial (café gourmet) é produzido a partir de
+                            grãos de café arábica obrigatoriamente.</p>
+
+                        <p>O café Arábica possui diversas variedades, sendo algumas delas:Bourbon, Catuaí, Obatã e Novo
+                            Mundo.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="modal fade" id="cafeRobusta" tabindex="-1" role="dialog" aria-labelledby="robusta"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -148,94 +162,96 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body px-5 py-4">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, blanditiis placeat!
-                        Perspiciatis rem odio doloremque minima beatae ea a veritatis eos reprehenderit, sequi
-                        exercitationem est mollitia nesciunt molestias suscipit similique?</p> 
+                        <p>O café Robusta tende a ser amargo e mais atraente. É uma espécie mais resistente a pragas e
+                            doenças, ao contrário do Arábica, não precisa necessariamente ser plantada em grandes
+                            altitudes. Essas variantes tornam o Robusta mais barato de produzir e, portanto, tornam os
+                            sacos de café mais acessíveis.</p>
 
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias recusandae sit explicabo
-                        deleniti culpa provident totam dolore voluptatem exercitationem accusantium, quisquam, repellat,
-                        fuga eum maiores unde inventore consectetur magnam expedita!</p>
-                            
+                        <p>Essa espécie é amplamente utilizada na produção de café solúvel, o que explica em parte seu
+                            sabor amargo.</p>
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="cafeArabica" tabindex="-1" aria-labelledby="Café Arábica" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
+        <div class="modal fade" id="cafeCatuai" tabindex="-1" role="dialog" aria-labelledby="catuai" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content p-1">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Café Arábica</h5>
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Café Catuaí</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    <div class="modal-body px-5 py-4">
+                        <p>O café Catuaí é um café 100% brasileiro.</p>
+                        <p>Como um híbrido (ou um híbrido de duas subespécies de Arábica), essa variedade
+                            recém-descoberta ganhou rapidamente o mercado. Hoje, Catuaí, palavra que significa “muito
+                            bom” no dialeto tupi-guarani, é líder na produção de arábica no Brasil e uma das variedades
+                            mais produtivas do planeta.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="cafeCatuai" tabindex="-1" aria-labelledby="Café Catuaí" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
+        <div class="modal fade" id="cafeNovoMundo" tabindex="-1" role="dialog" aria-labelledby="novoMundo"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content p-1">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Café Catuaí</h5>
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Café Novo Mundo</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    <div class="modal-body px-5 py-4">
+                        <p>Em 1952, Mundo Novo era um cruzamento natural da variedade Sumatra com a variedade Bourbon
+                            Vermelho e foi descoberto na cidade de Mineiros do Tietê em São Paulo. Esta parte da
+                            história é ciência. As sementes de um dos cafeeiros foram plantadas na cidade de Mundo Novo
+                            (hoje Urupês), em São Paulo. Lá, pesquisadores da Embrapa optaram por criar as plantas-mãe
+                            da variedade Mundo Novo - uma referência para sua cidade em desenvolvimento. Logo, essas
+                            plantas se mostraram resistentes e produtivas no campo.</p>
+
+                        <p>Pensando na alta performance, a Embrapa aposta nessa variedade, cria sementes e distribui o
+                            café Mundo Novo para o mercado. Desde então, essa variedade, junto com o café Catuaí, se
+                            tornou uma das principais produtoras de café arábica do país.</p>
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="cafeNovoMundo" tabindex="-1" aria-labelledby="Café Novo Mundo" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
+        <div class="modal fade" id="cafeAcaia" tabindex="-1" role="dialog" aria-labelledby="acaia" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content p-1">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Café Novo Mundo</h5>
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Café Acaiá</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    <div class="modal-body px-5 py-4">
+                        <p>O acaiá é fruto de um cafeeiro que produz grãos de café de alta qualidade. De acordo com as
+                            diferentes áreas de cultivo, o sabor de cada variedade de café possui características
+                            próprias. As características de altitude, solo, chuva, quantidade de
+                            sombra recebida pelas plantas e luz solar afetam diretamente o aroma e o sabor dos grãos, o
+                            que torna cada colheita diferente. </p>
+                        <p>Na xícara, o acaiá costuma agradar quem gosta de um café macio e frutado. Muitas pessoas
+                            desistem das bebidas adoçantes por causa do sabor do chocolate e da acidez moderada dessa
+                            variedade. Os baristas também gostam de explorar acaiá misto, porque o café de sabor suave
+                            combina perfeitamente com grãos de sabor e textura mais intensos.</p>
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="cafeAcaia" tabindex="-1" aria-labelledby="Café Acaiá" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
+        <div class="modal fade" id="cafeBourbon" tabindex="-1" role="dialog" aria-labelledby="bourboun"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content p-1">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Café Acaiá</h5>
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Café Robusta</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="cafeBourbon" tabindex="-1" aria-labelledby="Café Bourbon" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Café Bourbon</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    <div class="modal-body px-5 py-4">
+                        <p>Em termos de sabor, o bourbon é uma das variedades de cafés especiais da mais alta qualidade.
+                            Isso porque, além do aroma forte, o café também tem um sabor diferente, com um sabor
+                            adocicado, que lembra avelã. A bebida à base bourbon tem características suaves,
+                            corpo médio, baixa acidez e excelente doçura de chocolate. Lembre-se de que dependendo da
+                            técnica de cultivo, essas características podem ser aprimoradas ainda mais.</p>
+
                     </div>
                 </div>
             </div>
