@@ -1,0 +1,69 @@
+html {
+    --marrom-forte: #1A100F;
+    --marrom-medio: #34211D;
+    --marrom-claro: #AB775F;
+
+    --laranja-fechado: #9A2B09;
+    --laranja-aberto: #EB5F1E;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: 0 0 1em gray;
+}
+
+.nav-item {
+    color: var(--marrom-forte);
+    margin-right: 25px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border-bottom: 2px solid var(--marrom-forte);
+    font-weight: bold;
+}
+
+a.nav-link {
+    padding: 0;
+}
+
+.nav-item:hover {
+    transform: translateY(-2px);
+    border-bottom: 2px solid var(--laranja-aberto);
+}
+
+.nav-link:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar button.btn.collapsed:before {
+    content: '+';
+    display: inline-block;
+    width: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.navbar button.btn:before {
+    content: '-';
+    display: inline-block;
+    width: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+button.navbar-toggler.btn {
+    padding: 5px;
+    border: 2px solid var(--marrom-forte);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+}
