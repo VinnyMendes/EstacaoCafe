@@ -10,7 +10,9 @@ h2{
 }
 
 main {
+    min-height: 100vh;
     padding: 6rem 0.5rem;
+    position: relative;
 }
 
 input {
@@ -132,5 +134,20 @@ a:focus {
     main {
         padding-left: clamp(5rem, 15vw, 30rem);
         padding-right: clamp(5rem, 15vw, 30rem);
+    }
+}
+
+@media (min-width: 1000px) {
+    main::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        background-image: url("../assets/aside-coffee-beans.png");
+        background-position: right center;
+        background-size: 60%;
+        background-repeat: no-repeat;
     }
 }
