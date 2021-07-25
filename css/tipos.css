@@ -14,7 +14,7 @@ main {
 h2 {
   margin: 2rem 0 1rem;
   font-size: clamp(1.5rem, 5vw, 4rem);
-  color: var(--marrom-claro) !important;
+  color: var(--creme) !important;
   padding: 0 0.25rem;
 }
 .card-grid {

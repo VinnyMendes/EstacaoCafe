@@ -51,7 +51,7 @@ body {
 }
 
 .nav-link {
-    padding: 1rem 2rem !important;
+    padding: 2rem 2rem !important;
     color: var(--marrom-forte);
     display: flex;
     align-items: center;
