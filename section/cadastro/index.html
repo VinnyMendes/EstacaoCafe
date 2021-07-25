@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <!-- Navbar css -->
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <!-- Próprio css -->
+    <link rel="stylesheet" href="../../css/cadastro.css">
+    <!-- Logo -->
+    <link rel="shortcut icon" href="../../assets/favicon.png">
+    <!-- FONTE -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Cadastro | Estação do Café</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-lignt fixed-top navbar-align justify-content-between">
+            <div class="navbar-brand">
+                <img src="../../assets/navbar-logo.png" alt="Logo">
+            </div>
+
+
+            <button class="navbar-toggler btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar2"
+                aria-controls="collapsingNavbar2" aria-expanded="false" aria-label="alternar navegação">
+            </button>
+
+
+            <div class="collapse navbar-collapse flex-grow-0" id="collapsingNavbar2">
+                <ul class="navbar-nav text-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../../">Início</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../tipos">Tipos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../sobre">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form class="signup-form">
+            <h2>Cadastro</h2>
+            <ul class="flex-outer">
+                <li class="input-group">
+                    <label for="textNome">Nome</label>
+                    <input id="textNome" type="text" required>
+                </li>
+
+                <li class="input-group">
+                    <label for="textSobrenome">Sobrenome</label>
+                    <input id="textSobrenome" type="text" required>
+                </li>
+
+                <li class="input-group">
+                    <label for="dataNascimento">Data de nascimento</label>
+                    <input type="date" id="dataNascimento" required>
+                </li>
+
+                <li class="input-group">
+                    <label for="phone">Telefone</label>
+                    <input type="text" id="phone" name="phone" class="masked" placeholder="(XX) X XXXX XXXX" required/>
+                </li>
+
+                <li class="input-group">
+                    <label for="inputEmail">Email</label>
+                    <input id="inputEmail" type="email" required>
+                </li>
+
+                <li class="input-group">
+                    <label for="endereco">Endereço</label>
+                    <textarea rows="3" id="endereco" required></textarea>
+                </li>
+
+                <li class="input-group">
+                    <label for="inputPassword">Senha</label>
+                    <input type="password" id="inputPassword" required>
+                </li>
+
+                <li class="input-group">
+                    <label for="inputConfirm">Confirme a senha</label>
+                    <input type="password" id="inputConfirm" required>
+
+                </li>
+
+                <li class="policy">
+                    <input type="checkbox" id="politicaPrivacidade" required>
+                    <label for="politicaPrivacidade">Li e concordo com as políticas de privacidade</label>
+                </li>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </ul>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../../js/masking-input.js" data-autoinit="true"></script>
+    <script>
+        document.querySelector("form").addEventListener("submit", e => {
+            e.preventDefault();
+            window.alert("Você se cadastrou! Parabéns!")
+        })
+    </script>
+</body>

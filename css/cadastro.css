@@ -1,3 +1,199 @@
-body{
-    background-color: var(--marrom-forte);
+body {
+  background-color: var(--creme);
 }
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+h2 {
+  margin: 0 0 0.5em;
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: var(--marrom-forte) !important;
+  padding: 0;
+}
+
+main {
+  min-height: 100vh;
+  padding: 10rem 0.5rem 3rem;
+  position: relative;
+}
+
+input:not([type="checkbox"]),
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus,
+input:not([type="checkbox"]):focus {
+  border-color: transparent !important;
+}
+
+.signup-form {
+  max-width: 55ch;
+}
+
+.flex-outer {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.btn-primary {
+  background-color: var(--laranja-fechado);
+  border-color: transparent;
+}
+.btn-primary:hover {
+  background-color: var(--laranja-aberto);
+  border-color: white;
+}
+.btn-primary:focus {
+  background-color: var(--laranja-fechado);
+  box-shadow: 0 0 0.5rem -0.075rem rgb(13, 121, 148);
+  border-color: transparent;
+}
+.btn-primary:active {
+  background-color: var(--laranja-aberto);
+}
+
+.input-group {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid var(--marrom-medio);
+}
+
+.input-group > label {
+  font-family: "Poppins";
+  color: var(--marrom-forte);
+  line-height: 1.5;
+}
+
+.input-group input:not([type="checkbox"]),
+.input-group textarea {
+  font-family: "Poppins";
+  color: var(--marrom-forte);
+  line-height: 1.2;
+
+  display: block;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.479);
+  padding: 0.5em;
+
+  transition: filter 200ms ease-in-out;
+}
+
+.shell {
+    padding: 0;
+    width: 100%;
+}
+
+.shell > span {
+    display: none;
+}
+
+.input-group::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--laranja-aberto);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input-group:focus-within::before {
+  width: 100%;
+}
+
+.policy {
+  flex-flow: row;
+  align-items: center;
+}
+
+.policy > input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+  
+
+.policy > label {
+  position: relative;
+  padding-left: 2.5rem;
+  cursor: pointer;
+}
+
+.policy > label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: rgba(255, 255, 255, 0.479);
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 0.075rem var(--marrom-forte);
+  transition: 150ms linear;
+  transition-property: box-shadow;
+}
+
+.policy > label::after {
+  content: "";
+  position: absolute;
+  top: 0.35rem;
+  left: 0.35rem;
+  width: 0.75rem;
+  height: 0.5rem;
+  transform: scale(0) rotate(-45deg);
+  border: 0 solid var(--marrom-claro);
+  border-left-width: 0.25rem;
+  border-bottom-width: 0.25rem;
+  box-shadow: 0.125rem 0.125rem rgba(9, 4, 37, 0.05);
+  transition: transform 250ms linear;
+}
+
+.policy:focus-within label::before {
+  box-shadow: 0 0 0 0.125rem var(--laranja-aberto);
+}
+
+.policy > input:checked + label::after {
+  transform: scale(1) rotate(-45deg);
+  transition: transform 150ms cubic-bezier(0.52, 0, 0.18, 2.5);
+}
+
+@media (min-width: 600px) {
+  main {
+    padding-left: clamp(5rem, 15vw, 30rem);
+    padding-right: clamp(5rem, 15vw, 30rem);
+  }
+}
+
+
+@media (min-width: 1000px) {
+    main::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      background-image: url("../assets/aside-coffee-beans.png");
+      background-position: right 8rem;
+      background-size: 30%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  }
