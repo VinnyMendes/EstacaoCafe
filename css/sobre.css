@@ -4,7 +4,7 @@ body{
 
 h2{
     margin: 1em 0 0.5em;
-    font-size: clamp(1.5rem, 5vw, 4rem);
+    font-size: clamp(2rem, 5vw, 4rem);
     color: var(--creme) !important;
     padding: 0 .25rem;
 }
