@@ -1,46 +1,84 @@
-html {
-    --marrom-forte: #1A100F;
-    --marrom-medio: #34211D;
-    --marrom-claro: #AB775F;
-    --laranja-fechado: #9A2B09;
-    --laranja-aberto: #EB5F1E;
-
-}
 body{
     background-color: var(--marrom-forte);
 }
-main{
-    padding: 6rem 0;
-}
+
 h2{
-    margin: 2rem 0 1rem;
+    margin: 1em 0 0.5em;
     font-size: clamp(1.5rem, 5vw, 4rem);
-    color: var(--marrom-claro) !important;
+    color: var(--creme) !important;
     padding: 0 .25rem;
 }
+
+h3{
+    font-size: clamp(1.1rem, 5vw, 1.6rem);
+}
+
 .card-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     gap: 1rem;
     padding: 0 .25rem;
 }
-.card img {
+
+section {
+    padding: 6rem 0;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+section:nth-of-type(2n) {
+    background: var(--creme);
+    margin-top: 0;
+}
+
+section:nth-of-type(2n) > h2 {
+    color: var(--laranja-aberto) !important;
+}
+
+.card > img {
     max-width: 40%;
     height: auto;
     object-fit: cover;
     aspect-ratio: 1 / 1;
 }
-h3{
-    font-size: clamp(1.1rem, 5vw, 1.6rem);
-}
 .icon-body{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    flex-basis: 0;
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
 }
+
+.icon-body > a {
+    margin: 0.25rem;
+    border-radius: 50%;
+    transition: 250ms ease-in-out;
+    transition-property: transform, box-shadow;
+}
+
+.icon-body > a:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 1rem -0.25rem rgb(0, 128, 128);
+}
+
+.icon-body > a:focus {
+    box-shadow:
+        0 0 0 .125rem white,
+        0 0 0 .25rem var(--laranja-aberto);
+
+    outline: none;
+}
+
 .icon{
-    width: 40px;
-    height: 40px;
+    --dimensions: 1.75rem;
+    width: var(--dimensions);
+    height: var(--dimensions);
 }
+
 .card{
     display: flex;
     flex-direction: row;
@@ -54,6 +92,13 @@ h3{
 .card-title{
     color: var(--marrom-forte);
 }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 @media (min-width:600px){
     .card-grid, h2{
         padding-left: clamp(5rem, 15vw, 30rem);

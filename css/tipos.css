@@ -58,7 +58,9 @@ h2 {
 }
 .btn-primary:focus {
   background-color: var(--laranja-fechado);
-  box-shadow: none !important;
+  box-shadow:
+    0 0 0 2px white,
+    0 0 0.5rem 0.075rem rgb(13, 121, 148);
   border-color: transparent;
 }
 .btn-primary:active {
