@@ -1,3 +1,62 @@
+html {
+    --marrom-forte: #1A100F;
+    --marrom-medio: #34211D;
+    --marrom-claro: #AB775F;
+    --laranja-fechado: #9A2B09;
+    --laranja-aberto: #EB5F1E;
+
+}
 body{
     background-color: var(--marrom-forte);
+}
+main{
+    padding: 6rem 0;
+}
+h2{
+    margin: 2rem 0 1rem;
+    font-size: clamp(1.5rem, 5vw, 4rem);
+    color: var(--marrom-claro) !important;
+    padding: 0 .25rem;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 1rem;
+    padding: 0 .25rem;
+}
+.card img {
+    max-width: 40%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+h3{
+    font-size: clamp(1.1rem, 5vw, 1.6rem);
+}
+.icon-body{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    word-wrap: break-word;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.card-title{
+    color: var(--marrom-forte);
+}
+@media (min-width:600px){
+    .card-grid, h2{
+        padding-left: clamp(5rem, 15vw, 30rem);
+        padding-right: clamp(5rem, 15vw, 30rem);
+    }
 }
