@@ -1,89 +1,114 @@
-body{
-    background-color: var(--marrom-forte);
+body {
+  background-color: var(--marrom-forte);
 }
 
 section {
-    min-height: 100vh;
-    background: var(--creme);
-    position: relative;
-    display: grid;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0;
+  min-height: 100vh;
+  background: var(--creme);
+  position: relative;
+  display: grid;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
 }
 
-section > p {
-    width: 100%;
-    height: 100%;
+section > p,
+section > div {
+  width: 100%;
+  height: 100%;
 
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
 
-    font-size: clamp(1.2rem, 4vw, 1.7rem);
-    z-index: 1;
-    padding: clamp(0.25em, 7vw, 2em);
-    position: relative;
-    margin: 0;
+  font-size: clamp(1.2rem, 4vw, 1.7rem);
+  z-index: 1;
+  padding: clamp(0.25em, 7vw, 2em);
+  position: relative;
+  margin: 0;
 }
 
-section > p::before{
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--creme);
-    opacity: 0.66;
+section > p::before,
+section > div::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--creme);
+  opacity: 0.66;
 }
 
-section:nth-of-type(2n) > p::before {
-    background: var(--marrom-forte);
+section:nth-of-type(2n) > p::before,
+section:nth-of-type(2n) > div::before {
+  background: var(--marrom-forte);
 }
 
 section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-repeat: no-repeat;
-    background-size: clamp(30rem, 40vw, 70rem);
-    background-attachment: fixed;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: clamp(30rem, 40vw, 70rem);
+  background-attachment: fixed;
 }
 
 section:nth-of-type(2n) {
-    background: var(--marrom-forte);
-    justify-content: flex-start;
-    color: var(--creme);
+  background: var(--marrom-forte);
+  justify-content: flex-start;
+  color: var(--creme);
 }
 
 .section-one::before {
-    background-image: url("../assets/aside-coffee-heart.png");
-    background-position: 10vw 20vh;
+  background-image: url("../assets/aside-coffee-heart.png");
+  background-position: 10vw 20vh;
 }
 
 .section-two::before {
-    background-image: url("../assets/aside-coffee-bright.png");
-    background-position: 50vw 25vh;
+  background-image: url("../assets/aside-coffee-bright.png");
+  background-position: 50vw 25vh;
 }
 
 .section-three::before {
-    background-image: url("../assets/aside-coffee-spilled-beans.png");
-    background-position: 10vw 25vh;
+  background-image: url("../assets/aside-coffee-spilled-beans.png");
+  background-position: 10vw 25vh;
+}
+
+.btn-primary {
+  background-color: var(--laranja-fechado);
+  border-color: transparent;
+}
+.btn-primary:hover {
+  background-color: var(--laranja-aberto);
+  border-color: white;
+}
+.btn-primary:focus {
+  background-color: var(--laranja-fechado);
+  box-shadow: 0 0 0 2px white, 0 0 0.5rem 0.075rem rgb(13, 121, 148);
+  border-color: transparent;
+}
+.btn-primary:active {
+  background-color: #ff793b;
+  outline: none;
+  box-shadow: none !important;
 }
 
 @media (min-width: 600px) {
-    section {
-        padding: clamp(1rem, 25vw, 10rem);
-    }
+  section {
+    padding: clamp(1rem, 25vw, 10rem);
+  }
 
-    section > p {
-        max-width: 30ch;
-        width: unset;
-        height: unset;
-    }
+  section > p,
+  section > div {
+    max-width: 30ch;
+    width: unset;
+    height: unset;
+  }
 }
