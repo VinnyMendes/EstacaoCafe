@@ -153,7 +153,7 @@ input:not([type="checkbox"]):focus {
 .policy > label::after {
   content: "";
   position: absolute;
-  top: 0.35rem;
+  top: 0.415rem;
   left: 0.35rem;
   width: 0.75rem;
   height: 0.5rem;
